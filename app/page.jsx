@@ -2,6 +2,7 @@ import Image from "next/image";
 import Nav from "@/components/Nav";
 import Terminal from "@/components/Terminal";
 import ParticleField from "@/components/ParticleField";
+import HeroObject from "@/components/HeroObject";
 import { Reveal, Tilt, Magnetic, Spotlight, HeroScroll, ScrollProgress } from "@/components/Effects";
 import { profile, services, stack, projects, process, offClock } from "./data";
 
@@ -95,7 +96,8 @@ function Hero() {
             </div>
           </Reveal>
         </div>
-        <Reveal delay={1000}>
+        <Reveal delay={1000} className="relative">
+          <HeroObject />
           <Tilt className="rounded-lg">
             <Terminal />
           </Tilt>

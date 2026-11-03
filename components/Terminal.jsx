@@ -38,7 +38,7 @@ export default function Terminal() {
   }, [shown, typed]);
 
   return (
-    <div className="scanlines relative overflow-hidden rounded-lg border border-line bg-panel shadow-[0_0_60px_-15px_rgb(225_29_46/0.35)]">
+    <div className="scanlines relative overflow-hidden rounded-lg border border-line/80 bg-panel/55 shadow-[0_0_60px_-15px_rgb(225_29_46/0.35)] backdrop-blur-md">
       <div className="flex items-center gap-2 border-b border-line px-4 py-3">
         <span className="h-3 w-3 rounded-full bg-blood" />
         <span className="h-3 w-3 rounded-full bg-maroon" />
