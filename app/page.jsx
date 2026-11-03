@@ -97,8 +97,8 @@ function Hero() {
           </Reveal>
         </div>
         <Reveal delay={1000} className="relative">
-          <HeroObject />
-          <Tilt className="rounded-lg">
+          <HeroObject href={projects[0].url} label={projects[0].domain} />
+          <Tilt className="relative z-10 -mt-10 rounded-lg sm:-mt-16 lg:-mt-28 lg:-mr-6 lg:ml-auto lg:max-w-[400px]">
             <Terminal />
           </Tilt>
         </Reveal>
